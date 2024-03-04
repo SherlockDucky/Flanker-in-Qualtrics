@@ -1,9 +1,9 @@
 // Use JSDELIVR to get the files from a GitHub repository
 // https://cdn.jsdelivr.net/gh/<github-username>/<repository-name>/
-var repo_site = "https://cdn.jsdelivr.net/gh/SherlockDucky/jsPsych-in-Qualtrics/flanker/";
+var repo_site = "https://cdn.jsdelivr.net/gh/SherlockDucky/Flanker-in-Qualtrics/flanker/";
 
 /* experiment parameters */
-var reps_per_trial_type = 40;
+var reps_per_trial_type = 1;
 
 /*set up welcome block*/
 var welcome = {
