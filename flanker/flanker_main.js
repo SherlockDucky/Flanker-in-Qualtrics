@@ -3,7 +3,7 @@
 var repo_site = "https://cdn.jsdelivr.net/gh/SherlockDucky/Flanker-in-Qualtrics-13/flanker/";
 
 /* experiment parameters */
-var reps_per_trial_type = 13;
+var reps_per_trial_type = 25;
 
 /*set up welcome block*/
 var welcome = {
