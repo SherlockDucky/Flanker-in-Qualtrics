@@ -1,6 +1,6 @@
 // Use JSDELIVR to get the files from a GitHub repository
 // https://cdn.jsdelivr.net/gh/<github-username>/<repository-name>/
-var repo_site = "https://cdn.jsdelivr.net/gh/SherlockDucky/Flanker-in-Qualtrics-1/flanker/";
+var repo_site = "https://cdn.jsdelivr.net/gh/SherlockDucky/Flanker-in-Qualtrics-11/flanker/";
 
 /* experiment parameters */
 var reps_per_trial_type = 2;
@@ -82,23 +82,7 @@ var test = {
 };
 
 /*defining debriefing block*/
-var debrief = {
-    type: "html-keyboard-response",
-    stimulus: function () {
-        var total_trials = jsPsych.data.get().filter({
-            trial_type: 'image-keyboard-response'
-        }).count();
-        var accuracy = Math.round(jsPsych.data.get().filter({
-            correct: true
-        }).count() / total_trials * 100);
-        var congruent_rt = Math.round(jsPsych.data.get().filter({
-            correct: true,
-            stim_type: 'congruent'
-        }).select('rt').mean());
-        var incongruent_rt = Math.round(jsPsych.data.get().filter({
-            correct: true,
-            stim_type: 'incongruent'
-        }).select('rt').mean());
+
 return "<p>You responded correctly on <strong>" + accuracy + "%</strong> of the trials.</p> " +
             "<p>Your average response time for congruent trials was <strong>" + congruent_rt + "ms</strong>.</p>" +
             "<p>Your average response time for incongruent trials was <strong>" + incongruent_rt + "ms</strong>.</p>" +
