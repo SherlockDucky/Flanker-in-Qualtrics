@@ -1,6 +1,6 @@
 // Use JSDELIVR to get the files from a GitHub repository
 // https://cdn.jsdelivr.net/gh/<github-username>/<repository-name>/
-var repo_site = "https://cdn.jsdelivr.net/gh/SherlockDucky/Flanker-in-Qualtrics-22/flanker/";
+var repo_site = "https://cdn.jsdelivr.net/gh/SherlockDucky/Flanker-in-Qualtrics-23/flanker/";
 
 /* experiment parameters */
 var reps_per_trial_type = 1;
@@ -99,10 +99,7 @@ var debrief = {
             correct: true,
             stim_type: 'incongruent'
         }).select('rt').mean());
-return "<p>You responded correctly on <strong>" + accuracy + "%</strong> of the trials.</p> " +
-            "<p>Your average response time for congruent trials was <strong>" + congruent_rt + "ms</strong>.</p>" +
-            "<p>Your average response time for incongruent trials was <strong>" + incongruent_rt + "ms</strong>.</p>" +
-            "<p>Press any key to complete the experiment. Thank you!</p>";
+return "<p>Press any key to complete the experiment. Thank you!</p>";
     }
 };
 
