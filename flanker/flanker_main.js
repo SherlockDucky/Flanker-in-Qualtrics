@@ -99,8 +99,7 @@ var debrief = {
             correct: true,
             stim_type: 'incongruent'
         }).select('rt').mean());
-return 
-            "<p>Press any key to complete the experiment. Thank you!</p>";
+return "<p>Press any key to complete the experiment. Thank you!</p>";
     }
 };
 
