@@ -1,6 +1,6 @@
 // Use JSDELIVR to get the files from a GitHub repository
 // https://cdn.jsdelivr.net/gh/<github-username>/<repository-name>/
-var repo_site = "https://cdn.jsdelivr.net/gh/SherlockDucky/Flanker-in-Qualtrics-2/flanker/";
+var repo_site = "https://cdn.jsdelivr.net/gh/SherlockDucky/Flanker-in-Qualtrics-3/flanker/";
 
 /* experiment parameters */
 var reps_per_trial_type = 2;
@@ -99,7 +99,8 @@ var debrief = {
             correct: true,
             stim_type: 'incongruent'
         }).select('rt').mean());
-
+return 
+            "<p>Press any key to complete the experiment. Thank you!</p>";
     }
 };
 
