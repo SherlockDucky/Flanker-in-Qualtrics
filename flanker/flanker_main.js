@@ -99,7 +99,10 @@ var debrief = {
             correct: true,
             stim_type: 'incongruent'
         }).select('rt').mean());
-return "<p>Press any key to complete the experiment. Thank you!</p>";
+return "<p>You responded correctly on <strong>" + accuracy + "%</strong> of the trials.</p> " +
+            "<p>Your average response time for congruent trials was <strong>" + congruent_rt + "ms</strong>.</p>" +
+            "<p>Your average response time for incongruent trials was <strong>" + incongruent_rt + "ms</strong>.</p>" +
+            "<p>Press any key to complete the experiment. Thank you!</p>";
     }
 };
 
